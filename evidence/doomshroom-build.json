@@ -1,0 +1,180 @@
+{
+  "profile": "garden_amd_full",
+  "price": 500,
+  "cooldown_msec": 50000,
+  "clips": {
+    "doomshroom_idle": {
+      "pages": [
+        {
+          "image": "ng_fx_full_doomshroom_idle",
+          "frames": 40,
+          "start": 0,
+          "columns": 8,
+          "rows": 8,
+          "dimensions": [
+            736,
+            704
+          ],
+          "cell": [
+            92,
+            88
+          ],
+          "texture_bytes": 2072576,
+          "delay_msec": 0
+        }
+      ],
+      "frames": 40,
+      "duration_msec": 1667,
+      "fps": 24,
+      "packed_pixels_equal_cloud": true
+    },
+    "doomshroom_explode": {
+      "pages": [
+        {
+          "image": "ng_fx_full_doomshroom_explode",
+          "frames": 66,
+          "start": 0,
+          "columns": 8,
+          "rows": 16,
+          "dimensions": [
+            1056,
+            1792
+          ],
+          "cell": [
+            132,
+            112
+          ],
+          "texture_bytes": 7569408,
+          "delay_msec": 0
+        }
+      ],
+      "frames": 66,
+      "duration_msec": 1435,
+      "fps": 46,
+      "packed_pixels_equal_cloud": true
+    },
+    "doomshroom_sleep": {
+      "pages": [
+        {
+          "image": "ng_fx_full_doomshroom_sleep",
+          "frames": 50,
+          "start": 0,
+          "columns": 8,
+          "rows": 8,
+          "dimensions": [
+            800,
+            672
+          ],
+          "cell": [
+            100,
+            84
+          ],
+          "texture_bytes": 2150400,
+          "delay_msec": 0
+        }
+      ],
+      "frames": 50,
+      "duration_msec": 2083,
+      "fps": 24,
+      "packed_pixels_equal_cloud": true
+    },
+    "doomshroom_burst": {
+      "pages": [
+        {
+          "image": "ng_fx_full_doomshroom_burst_p0",
+          "frames": 8,
+          "start": 0,
+          "columns": 4,
+          "rows": 2,
+          "dimensions": [
+            1200,
+            680
+          ],
+          "cell": [
+            300,
+            340
+          ],
+          "texture_bytes": 3264000,
+          "delay_msec": 0
+        },
+        {
+          "image": "ng_fx_full_doomshroom_burst_p1",
+          "frames": 8,
+          "start": 8,
+          "columns": 4,
+          "rows": 2,
+          "dimensions": [
+            1200,
+            680
+          ],
+          "cell": [
+            300,
+            340
+          ],
+          "texture_bytes": 3264000,
+          "delay_msec": 333
+        },
+        {
+          "image": "ng_fx_full_doomshroom_burst_p2",
+          "frames": 8,
+          "start": 16,
+          "columns": 4,
+          "rows": 2,
+          "dimensions": [
+            1200,
+            680
+          ],
+          "cell": [
+            300,
+            340
+          ],
+          "texture_bytes": 3264000,
+          "delay_msec": 667
+        },
+        {
+          "image": "ng_fx_full_doomshroom_burst_p3",
+          "frames": 8,
+          "start": 24,
+          "columns": 4,
+          "rows": 2,
+          "dimensions": [
+            1200,
+            680
+          ],
+          "cell": [
+            300,
+            340
+          ],
+          "texture_bytes": 3264000,
+          "delay_msec": 1000
+        },
+        {
+          "image": "ng_fx_full_doomshroom_burst_p4",
+          "frames": 4,
+          "start": 32,
+          "columns": 4,
+          "rows": 1,
+          "dimensions": [
+            1200,
+            340
+          ],
+          "cell": [
+            300,
+            340
+          ],
+          "texture_bytes": 1632000,
+          "delay_msec": 1333
+        }
+      ],
+      "frames": 36,
+      "duration_msec": 1500,
+      "fps": 24,
+      "packed_pixels_equal_cloud": true
+    }
+  },
+  "total_texture_mib": 25.253662109375,
+  "source_audio_sha256": "bfadb20c3d8b6242a2728c85c968a08cc0a6db3b9700470ee2647b83811e23c4",
+  "nuke": "maps/_zombiemode_powerups::nuke_powerup; native Nacht behavior",
+  "sleep_note": "Original sleep loop included but unused in night-map gameplay",
+  "game_runtime_verified": false
+}

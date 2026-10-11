@@ -1,0 +1,30 @@
+{
+  "doomshroom_idle": {
+    "frames_checked": 40,
+    "packed_pixels_equal_cloud": true,
+    "pages": 1,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "doomshroom_explode": {
+    "frames_checked": 66,
+    "packed_pixels_equal_cloud": true,
+    "pages": 1,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "doomshroom_sleep": {
+    "frames_checked": 50,
+    "packed_pixels_equal_cloud": true,
+    "pages": 1,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "doomshroom_burst": {
+    "frames_checked": 36,
+    "packed_pixels_equal_cloud": true,
+    "pages": 5,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  }
+}

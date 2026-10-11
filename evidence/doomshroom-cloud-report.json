@@ -1,0 +1,111 @@
+{
+  "gpu": "AMD Radeon Pro W7900D",
+  "rocm": "7.15.26333",
+  "pytorch": "2.13.0+rocm10.0.0",
+  "scope": "Original Doom-shroom idle, explode and sleep tracks; original Doom.xml particle layers including DOOM lettering",
+  "game_runtime_verified": false,
+  "clips": {
+    "doomshroom_idle": {
+      "name": "doomshroom_idle",
+      "source": "DoomShroom",
+      "first": 0,
+      "count": 20,
+      "rate": 12,
+      "fps": 24,
+      "loop": true,
+      "frames": 40,
+      "duration_msec": 1667,
+      "render_and_readback_seconds": 0.0845350380986929,
+      "max_cpu_gpu_error": 6.079673767089844e-06,
+      "mean_cpu_gpu_error": 1.952365380475385e-09,
+      "max_attachment_error": 0,
+      "body_keyframes_verified": true,
+      "source_bundle_sha256": "cdb33ee193fc3327667180acec6dc83086aecb425f8a17cd2a78d4a5ef5c955a",
+      "forced_wallnut_twitch": false,
+      "artwork_generated": false,
+      "wrap_difference": 0.0,
+      "median_step_difference": 0.011035840027034283,
+      "bounds": [
+        188,
+        188,
+        277,
+        274
+      ]
+    },
+    "doomshroom_explode": {
+      "name": "doomshroom_explode",
+      "source": "DoomShroom",
+      "first": 19,
+      "count": 33,
+      "rate": 23,
+      "fps": 46,
+      "loop": false,
+      "frames": 66,
+      "duration_msec": 1435,
+      "render_and_readback_seconds": 0.13236712850630283,
+      "max_cpu_gpu_error": 6.735324859619141e-06,
+      "mean_cpu_gpu_error": 2.6580411205401333e-09,
+      "max_attachment_error": 0,
+      "body_keyframes_verified": true,
+      "source_bundle_sha256": "cdb33ee193fc3327667180acec6dc83086aecb425f8a17cd2a78d4a5ef5c955a",
+      "forced_wallnut_twitch": false,
+      "artwork_generated": false,
+      "wrap_difference": null,
+      "median_step_difference": 0.006042453460395336,
+      "bounds": [
+        169,
+        164,
+        297,
+        274
+      ]
+    },
+    "doomshroom_sleep": {
+      "name": "doomshroom_sleep",
+      "source": "DoomShroom",
+      "first": 52,
+      "count": 25,
+      "rate": 12,
+      "fps": 24,
+      "loop": true,
+      "frames": 50,
+      "duration_msec": 2083,
+      "render_and_readback_seconds": 0.09106443636119366,
+      "max_cpu_gpu_error": 6.258487701416016e-06,
+      "mean_cpu_gpu_error": 2.082650274459752e-09,
+      "max_attachment_error": 0,
+      "body_keyframes_verified": true,
+      "source_bundle_sha256": "cdb33ee193fc3327667180acec6dc83086aecb425f8a17cd2a78d4a5ef5c955a",
+      "forced_wallnut_twitch": false,
+      "artwork_generated": false,
+      "wrap_difference": 0.0,
+      "median_step_difference": 0.013810309115797281,
+      "bounds": [
+        185,
+        193,
+        281,
+        274
+      ]
+    },
+    "doomshroom_burst": {
+      "name": "doomshroom_burst",
+      "source": "Doom.xml",
+      "frames": 36,
+      "fps": 24,
+      "duration_msec": 1500,
+      "loop": false,
+      "bounds": [
+        120,
+        103,
+        405,
+        441
+      ],
+      "max_cpu_gpu_error": 8.559226989746094e-05,
+      "mean_cpu_gpu_error": 5.625814125664874e-08,
+      "source_origin": [
+        256,
+        384
+      ],
+      "method": "deterministic port of source particle counts, positions, scales, spin, alpha and original images; native nuke supplies screen flash"
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "profile": "garden_amd_plants",
+  "game_runtime_verified": false,
+  "clips": {
+    "sunflower_idle": {
+      "frames": 125,
+      "fps": 60,
+      "duration_msec": 2083,
+      "atlas_dimensions": [
+        1280,
+        640
+      ],
+      "cell_dimensions": [
+        80,
+        80
+      ],
+      "texture_bytes": 3276800,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.547945205479452,
+      "old_source_bounds": [
+        198,
+        197,
+        272,
+        271
+      ],
+      "new_source_bounds": [
+        195,
+        194,
+        275,
+        273
+      ],
+      "spawn_offset_z": -14.246575342465754,
+      "loop": true
+    },
+    "repeater_idle": {
+      "frames": 125,
+      "fps": 60,
+      "duration_msec": 2083,
+      "atlas_dimensions": [
+        1472,
+        672
+      ],
+      "cell_dimensions": [
+        92,
+        84
+      ],
+      "texture_bytes": 3956736,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.5671641791044776,
+      "old_source_bounds": [
+        195,
+        199,
+        273,
+        271
+      ],
+      "new_source_bounds": [
+        196,
+        191,
+        280,
+        273
+      ],
+      "spawn_offset_z": -13.611940298507463,
+      "loop": true
+    },
+    "repeater_shoot": {
+      "frames": 50,
+      "fps": 48,
+      "duration_msec": 1042,
+      "atlas_dimensions": [
+        1472,
+        336
+      ],
+      "cell_dimensions": [
+        92,
+        84
+      ],
+      "texture_bytes": 1978368,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.5671641791044776,
+      "old_source_bounds": [
+        195,
+        199,
+        273,
+        271
+      ],
+      "new_source_bounds": [
+        196,
+        191,
+        280,
+        273
+      ],
+      "spawn_offset_z": -13.611940298507463,
+      "loop": false
+    },
+    "wallnut_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_dimensions": [
+        1152,
+        640
+      ],
+      "cell_dimensions": [
+        72,
+        80
+      ],
+      "texture_bytes": 2949120,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        193,
+        269,
+        270
+      ],
+      "spawn_offset_z": -14.444444444444445,
+      "loop": true
+    },
+    "wallnut_crack1_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_dimensions": [
+        1152,
+        640
+      ],
+      "cell_dimensions": [
+        72,
+        80
+      ],
+      "texture_bytes": 2949120,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        193,
+        269,
+        270
+      ],
+      "spawn_offset_z": -14.444444444444445,
+      "loop": true
+    },
+    "wallnut_crack2_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_dimensions": [
+        1152,
+        640
+      ],
+      "cell_dimensions": [
+        72,
+        80
+      ],
+      "texture_bytes": 2949120,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        193,
+        269,
+        270
+      ],
+      "spawn_offset_z": -14.444444444444445,
+      "loop": true
+    }
+  },
+  "accepted_demo_modified": false,
+  "gpu": "AMD Radeon Pro W7900D",
+  "rocm": "7.15.26333",
+  "total_new_texture_mib": 17.22265625,
+  "replaced_texture_mib": 18.0
+}

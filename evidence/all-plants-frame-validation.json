@@ -1,0 +1,147 @@
+{
+  "sunflower_idle": {
+    "verified_frames": 125,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "repeater_idle": {
+    "verified_frames": 125,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "repeater_shoot": {
+    "verified_frames": 50,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "wallnut_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "wallnut_crack1_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "wallnut_crack2_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "cherrybomb_idle": {
+    "verified_frames": 26,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "cherrybomb_explode": {
+    "verified_frames": 28,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "potatomine_rise": {
+    "verified_frames": 38,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "potatomine_armed": {
+    "verified_frames": 22,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "chomper_idle": {
+    "verified_frames": 50,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "chomper_bite": {
+    "verified_frames": 50,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "chomper_chew": {
+    "verified_frames": 32,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "chomper_swallow": {
+    "verified_frames": 56,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "squash_idle": {
+    "verified_frames": 38,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "squash_attack": {
+    "verified_frames": 54,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "squash_land": {
+    "verified_frames": 16,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "lilypad_idle": {
+    "verified_frames": 96,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "tanglekelp_idle": {
+    "verified_frames": 44,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  },
+  "tanglekelp_grab": {
+    "verified_frames": 10,
+    "disconnected_large_components": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "packed_pixels_equal_cloud": true,
+    "independent_width_height_verified": true,
+    "minimum_transparent_border_pixels": 2
+  }
+}

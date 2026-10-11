@@ -46,6 +46,17 @@ This is a **source-only research repository**, not a ready-to-install game downl
 
 ## Current scope
 
-The final Nacht comparison was visually accepted and recorded. Work on other maps is paused. Custom maps, co-op, cloud-enhanced animations for every plant and exhaustive combat/balance testing are outside this proof of concept. We used AI-assisted analysis and integration; we did not fully decompile or rebuild either entire game engine.
+The final Nacht comparison was visually accepted and recorded. Work on other maps is paused. Custom maps, co-op and exhaustive combat/balance testing are outside this proof of concept. The full roster animation expansion is described below. We used AI-assisted analysis and integration; we did not fully decompile or rebuild either entire game engine.
 
 See [demo steps](docs/DEMO.md), [third-party components](THIRD_PARTY.md) and [contribution guidance](CONTRIBUTING.md). This repository does not grant rights to the original games or their assets. No project-wide code license has been selected yet.
+
+## Three-plant AMD expansion
+
+A separate Nacht test now includes GPU-rendered Sunflower idle/blink, Repeater idle/blink and shooting, and Wall-nut healthy/damaged loops. All 606 packed frames passed pixel-preservation and connectivity checks. The replacement textures use 17.223 MiB versus 18 MiB previously, without downscaling or lossy compression. The separate profile reached active gameplay, and the user confirmed the three plants’ animations look good. Full combat and damage-state testing remains separate. The accepted recorded Peashooter demo remains unchanged. See [the expansion and test instructions](docs/THREE-PLANTS.md).
+
+
+## Full roster test and Doom-shroom
+
+The separate `garden_amd_full` Nacht profile extends the AMD pipeline to the remaining existing plant animations and adds Doom-shroom: 500 sun, original swelling and DOOM particle artwork, original sound, Betty planting, and the stock Nacht nuke power-up. Squash now rises above its target and slams down with the existing Chomper blood effects; area damage still targets enemy AI only. Wall-nut no longer forces the twitch every loop or restarts a blink on each bite. Potato Mine's packet and held sprite use its emerged pose. Pea projectiles use the Peashooter's original source-pixel scale, increasing their diameter about 2.52 times.
+
+All 1,358 newly exported frames passed lossless packing checks. The private native build passed, and the separate profile reached active Nacht gameplay. The follow-up build fixes oversized Doom/Potato weapon text and enables independent sprite width/height to prevent stretching and floor clipping. All 11 packaged weapon definitions pass the text limit, and all new frames pass cell-border checks. On 2026-10-10, the user confirmed Doom-shroom and Potato Mine plant correctly, Chomper looks whole, and accepted this version. Detailed nuke/slam behavior and every damage state were not separately confirmed. The accepted recorded Peashooter profile and prior three-plant test remain separate. Water-plant assets are processed, but other-map gameplay remains deferred. See [full roster build and test instructions](docs/FULL-ROSTER.md) and the [manual push checklist](docs/MANUAL-PUSH.md).

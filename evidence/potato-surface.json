@@ -1,0 +1,11 @@
+{
+  "source": "PotatoMine.reanim",
+  "original_frame": 20,
+  "appearance": "fully emerged; original ground placement still begins buried",
+  "held_dimensions": [
+    14,
+    11.052631578947368
+  ],
+  "packet_price": 25,
+  "original_betty_skeleton_unchanged": true
+}

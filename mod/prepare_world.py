@@ -48,7 +48,7 @@ def effect(name, material, count=1, fps=0, size=39.1, preview=False, projectile=
     values = {
         'name': '"'+name+'"',
         'editorFlags': 'looping useBackCompatVel' if looping else 'useBackCompatVel',
-        'flags': 'spawnRelative spawnOffsetNone runRelToEffect',
+        'flags': 'spawnRelative spawnOffsetNone runRelToEffect nonUniformScale',
         'spawnRange': '0 0', 'fadeInRange': '0 0', 'fadeOutRange': '0 0',
         'spawnLooping': f'{duration} 0', 'spawnOneShot': '1 0',
         'lifeSpanMsec': f'{duration} 0',
@@ -208,7 +208,7 @@ pea=Image.open(BytesIO(base.asset('images/ProjectilePea.png'))).convert('RGBA')
 side=1 << (max(pea.size)-1).bit_length(); cell=Image.new('RGBA',(side,side))
 cell.alpha_composite(pea,((side-pea.width)//2,(side-pea.height)//2))
 image_asset('ng_fx_pea',cell)
-effect('pea','ng_fx_pea',size=7,projectile=True,lifetime=50,oriented=False)
+effect('pea','ng_fx_pea',size=side*clips['peashooter_idle']['world_height']/clips['peashooter_idle']['cell_height'],projectile=True,lifetime=50,oriented=False)
 
 # Original PvZ explosion lettering and particles, never an invented BOOM label.
 for name,path,size,duration in [('powie','particles/ExplosionPowie.png',95,500),('spudow','particles/ExplosionSpudow.png',95,700),('cloud','particles/ExplosionCloud.png',65,550)]:
@@ -247,6 +247,9 @@ def hud_asset(name,picture):
     material=json.loads((base.TASK/'work/waw-materials/materials/rank_pvt1.json').read_text())
     material['textures'][0]['image']=name
     (raw/'materials'/f'{name}.json').write_text(json.dumps(material,indent=2)+'\n')
+
+# Packet and held artwork show the emerged mine; placed idle stays buried.
+portraits['potatomine']=animations.frame('PotatoMine',20)
 
 plant_names=[p[0] for p in PLANTS]
 hud_asset('ng_seedbank',animations.image('images/SeedBank.png'))

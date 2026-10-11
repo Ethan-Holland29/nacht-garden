@@ -1,0 +1,705 @@
+{
+  "profile": "garden_amd_full",
+  "game_runtime_verified": false,
+  "clips": {
+    "sunflower_idle": {
+      "frames": 125,
+      "fps": 60,
+      "duration_msec": 2083,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1280,
+        640
+      ],
+      "cell_dimensions": [
+        80,
+        80
+      ],
+      "texture_bytes": 3276800,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.547945205479452,
+      "old_source_bounds": [
+        198,
+        197,
+        272,
+        271
+      ],
+      "new_source_bounds": [
+        195,
+        194,
+        275,
+        273
+      ],
+      "spawn_offset_z": -14.246575342465754,
+      "loop": true
+    },
+    "repeater_idle": {
+      "frames": 125,
+      "fps": 60,
+      "duration_msec": 2083,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1344,
+        608
+      ],
+      "cell_dimensions": [
+        84,
+        76
+      ],
+      "texture_bytes": 3268608,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.5671641791044776,
+      "old_source_bounds": [
+        195,
+        199,
+        273,
+        271
+      ],
+      "new_source_bounds": [
+        196,
+        200,
+        275,
+        273
+      ],
+      "spawn_offset_z": -15.880597014925373,
+      "loop": true
+    },
+    "repeater_shoot": {
+      "frames": 50,
+      "fps": 48,
+      "duration_msec": 1042,
+      "atlas_columns": 16,
+      "atlas_rows": 4,
+      "atlas_dimensions": [
+        1472,
+        336
+      ],
+      "cell_dimensions": [
+        92,
+        84
+      ],
+      "texture_bytes": 1978368,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.5671641791044776,
+      "old_source_bounds": [
+        195,
+        199,
+        273,
+        271
+      ],
+      "new_source_bounds": [
+        196,
+        191,
+        280,
+        273
+      ],
+      "spawn_offset_z": -13.611940298507463,
+      "loop": false
+    },
+    "wallnut_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1152,
+        640
+      ],
+      "cell_dimensions": [
+        72,
+        80
+      ],
+      "texture_bytes": 2949120,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        193,
+        269,
+        270
+      ],
+      "spawn_offset_z": -14.444444444444445,
+      "loop": true
+    },
+    "wallnut_crack1_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1152,
+        608
+      ],
+      "cell_dimensions": [
+        72,
+        76
+      ],
+      "texture_bytes": 2801664,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        194,
+        269,
+        270
+      ],
+      "spawn_offset_z": -15.555555555555557,
+      "loop": true
+    },
+    "wallnut_crack2_idle": {
+      "frames": 102,
+      "fps": 24,
+      "duration_msec": 4250,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1152,
+        640
+      ],
+      "cell_dimensions": [
+        72,
+        80
+      ],
+      "texture_bytes": 2949120,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.5555555555555556,
+      "old_source_bounds": [
+        202,
+        195,
+        267,
+        268
+      ],
+      "new_source_bounds": [
+        200,
+        193,
+        269,
+        270
+      ],
+      "spawn_offset_z": -14.444444444444445,
+      "loop": true
+    },
+    "cherrybomb_idle": {
+      "frames": 26,
+      "fps": 60,
+      "duration_msec": 433,
+      "atlas_columns": 16,
+      "atlas_rows": 2,
+      "atlas_dimensions": [
+        1536,
+        144
+      ],
+      "cell_dimensions": [
+        96,
+        72
+      ],
+      "texture_bytes": 884736,
+      "old_texture_bytes": 1048576,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.47761194029850745,
+      "old_source_bounds": [
+        173,
+        183,
+        291,
+        269
+      ],
+      "new_source_bounds": [
+        187,
+        193,
+        280,
+        265
+      ],
+      "spawn_offset_z": -11.462686567164178,
+      "loop": true
+    },
+    "cherrybomb_explode": {
+      "frames": 28,
+      "fps": 60,
+      "duration_msec": 467,
+      "atlas_columns": 16,
+      "atlas_rows": 2,
+      "atlas_dimensions": [
+        1984,
+        184
+      ],
+      "cell_dimensions": [
+        124,
+        92
+      ],
+      "texture_bytes": 1460224,
+      "old_texture_bytes": 1048576,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.47761194029850745,
+      "old_source_bounds": [
+        173,
+        183,
+        291,
+        269
+      ],
+      "new_source_bounds": [
+        170,
+        180,
+        294,
+        271
+      ],
+      "spawn_offset_z": -9.552238805970148,
+      "loop": false
+    },
+    "potatomine_rise": {
+      "frames": 38,
+      "fps": 24,
+      "duration_msec": 1583,
+      "atlas_columns": 16,
+      "atlas_rows": 4,
+      "atlas_dimensions": [
+        1600,
+        336
+      ],
+      "cell_dimensions": [
+        100,
+        84
+      ],
+      "texture_bytes": 2150400,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.32,
+      "old_source_bounds": [
+        182,
+        196,
+        277,
+        274
+      ],
+      "new_source_bounds": [
+        180,
+        194,
+        280,
+        276
+      ],
+      "spawn_offset_z": -7.68,
+      "loop": false
+    },
+    "potatomine_armed": {
+      "frames": 22,
+      "fps": 24,
+      "duration_msec": 917,
+      "atlas_columns": 16,
+      "atlas_rows": 2,
+      "atlas_dimensions": [
+        1600,
+        160
+      ],
+      "cell_dimensions": [
+        100,
+        80
+      ],
+      "texture_bytes": 1024000,
+      "old_texture_bytes": 1048576,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.32,
+      "old_source_bounds": [
+        182,
+        196,
+        277,
+        274
+      ],
+      "new_source_bounds": [
+        180,
+        195,
+        280,
+        274
+      ],
+      "spawn_offset_z": -7.68,
+      "loop": true
+    },
+    "chomper_idle": {
+      "frames": 50,
+      "fps": 24,
+      "duration_msec": 2083,
+      "atlas_columns": 8,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1088,
+        832
+      ],
+      "cell_dimensions": [
+        136,
+        104
+      ],
+      "texture_bytes": 3620864,
+      "old_texture_bytes": 8388608,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.46,
+      "old_source_bounds": [
+        183,
+        148,
+        319,
+        278
+      ],
+      "new_source_bounds": [
+        184,
+        176,
+        289,
+        280
+      ],
+      "spawn_offset_z": -35.88,
+      "loop": true
+    },
+    "chomper_bite": {
+      "frames": 50,
+      "fps": 48,
+      "duration_msec": 1042,
+      "atlas_columns": 8,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1152,
+        1088
+      ],
+      "cell_dimensions": [
+        144,
+        136
+      ],
+      "texture_bytes": 5013504,
+      "old_texture_bytes": 8388608,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.46,
+      "old_source_bounds": [
+        183,
+        148,
+        319,
+        278
+      ],
+      "new_source_bounds": [
+        181,
+        146,
+        322,
+        280
+      ],
+      "spawn_offset_z": -28.52,
+      "loop": false
+    },
+    "chomper_chew": {
+      "frames": 32,
+      "fps": 24,
+      "duration_msec": 1333,
+      "atlas_columns": 8,
+      "atlas_rows": 4,
+      "atlas_dimensions": [
+        1088,
+        352
+      ],
+      "cell_dimensions": [
+        136,
+        88
+      ],
+      "texture_bytes": 1531904,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.46,
+      "old_source_bounds": [
+        183,
+        148,
+        319,
+        278
+      ],
+      "new_source_bounds": [
+        184,
+        192,
+        270,
+        280
+      ],
+      "spawn_offset_z": -39.56,
+      "loop": true
+    },
+    "chomper_swallow": {
+      "frames": 56,
+      "fps": 48,
+      "duration_msec": 1167,
+      "atlas_columns": 8,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1088,
+        832
+      ],
+      "cell_dimensions": [
+        136,
+        104
+      ],
+      "texture_bytes": 3620864,
+      "old_texture_bytes": 8388608,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.46,
+      "old_source_bounds": [
+        183,
+        148,
+        319,
+        278
+      ],
+      "new_source_bounds": [
+        184,
+        179,
+        283,
+        280
+      ],
+      "spawn_offset_z": -35.88,
+      "loop": false
+    },
+    "squash_idle": {
+      "frames": 38,
+      "fps": 24,
+      "duration_msec": 1583,
+      "atlas_columns": 16,
+      "atlas_rows": 4,
+      "atlas_dimensions": [
+        1280,
+        368
+      ],
+      "cell_dimensions": [
+        80,
+        92
+      ],
+      "texture_bytes": 1884160,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.49411764705882355,
+      "old_source_bounds": [
+        184,
+        177,
+        278,
+        273
+      ],
+      "new_source_bounds": [
+        194,
+        184,
+        271,
+        275
+      ],
+      "spawn_offset_z": -9.882352941176471,
+      "loop": true
+    },
+    "squash_attack": {
+      "frames": 54,
+      "fps": 48,
+      "duration_msec": 1125,
+      "atlas_columns": 16,
+      "atlas_rows": 4,
+      "atlas_dimensions": [
+        1472,
+        400
+      ],
+      "cell_dimensions": [
+        92,
+        100
+      ],
+      "texture_bytes": 2355200,
+      "old_texture_bytes": 2097152,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.49411764705882355,
+      "old_source_bounds": [
+        184,
+        177,
+        278,
+        273
+      ],
+      "new_source_bounds": [
+        188,
+        175,
+        277,
+        275
+      ],
+      "spawn_offset_z": -7.905882352941177,
+      "loop": false
+    },
+    "squash_land": {
+      "frames": 16,
+      "fps": 48,
+      "duration_msec": 333,
+      "atlas_columns": 16,
+      "atlas_rows": 1,
+      "atlas_dimensions": [
+        1600,
+        100
+      ],
+      "cell_dimensions": [
+        100,
+        100
+      ],
+      "texture_bytes": 640000,
+      "old_texture_bytes": 524288,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.49411764705882355,
+      "old_source_bounds": [
+        184,
+        177,
+        278,
+        273
+      ],
+      "new_source_bounds": [
+        182,
+        178,
+        281,
+        275
+      ],
+      "spawn_offset_z": -7.905882352941177,
+      "loop": false
+    },
+    "lilypad_idle": {
+      "frames": 96,
+      "fps": 24,
+      "duration_msec": 4000,
+      "atlas_columns": 16,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1344,
+        480
+      ],
+      "cell_dimensions": [
+        84,
+        60
+      ],
+      "texture_bytes": 2580480,
+      "old_texture_bytes": 131072,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.25,
+      "old_source_bounds": [
+        193,
+        207,
+        271,
+        263
+      ],
+      "new_source_bounds": [
+        191,
+        205,
+        273,
+        265
+      ],
+      "spawn_offset_z": -1.0,
+      "loop": true
+    },
+    "tanglekelp_idle": {
+      "frames": 44,
+      "fps": 24,
+      "duration_msec": 1833,
+      "atlas_columns": 8,
+      "atlas_rows": 8,
+      "atlas_dimensions": [
+        1248,
+        608
+      ],
+      "cell_dimensions": [
+        156,
+        76
+      ],
+      "texture_bytes": 3035136,
+      "old_texture_bytes": 4194304,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.43478260869565216,
+      "old_source_bounds": [
+        186,
+        196,
+        335,
+        283
+      ],
+      "new_source_bounds": [
+        183,
+        193,
+        276,
+        267
+      ],
+      "spawn_offset_z": -4.3478260869565215,
+      "loop": true
+    },
+    "tanglekelp_grab": {
+      "frames": 10,
+      "fps": 24,
+      "duration_msec": 417,
+      "atlas_columns": 8,
+      "atlas_rows": 2,
+      "atlas_dimensions": [
+        1248,
+        160
+      ],
+      "cell_dimensions": [
+        156,
+        80
+      ],
+      "texture_bytes": 798720,
+      "old_texture_bytes": 1048576,
+      "pixels_preserved": true,
+      "independent_width_height": true,
+      "units_per_pixel": 0.43478260869565216,
+      "old_source_bounds": [
+        186,
+        196,
+        335,
+        283
+      ],
+      "new_source_bounds": [
+        247,
+        208,
+        338,
+        285
+      ],
+      "spawn_offset_z": -11.304347826086957,
+      "loop": false
+    }
+  },
+  "accepted_demo_modified": false,
+  "gpu": "AMD Radeon Pro W7900D",
+  "rocm": "7.15.26333",
+  "total_new_texture_mib": 45.6083984375,
+  "replaced_texture_mib": 60.625,
+  "pea_proportions": {
+    "source_sprite_pixels": [
+      28,
+      28
+    ],
+    "visible_source_diameter_pixels": 24,
+    "source_peashooter_height_pixels": 69,
+    "source_peashooter_world_height": 38,
+    "old_quad_width": 7,
+    "new_quad_width": 17.6231884057971,
+    "new_visible_diameter": 13.217391304347826,
+    "diameter_multiplier": 2.5175983436853,
+    "method": "shared world units per original source pixel; no new projectile artwork"
+  }
+}

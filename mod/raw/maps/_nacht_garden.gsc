@@ -523,9 +523,7 @@ tick_plant( now )
                         // Only the eaten enemy receives damage. These are the
                         // original Nacht blood effects, with no blast damage.
                         blood = victim.origin+(0,0,42);
-                        PlayFX( level._effect["headshot"],blood );
-                        PlayFX( level._effect["headshot_nochunks"],blood );
-                        PlayFX( level._effect["bloodspurt"],blood );
+                        plant_blood_burst( blood );
                         victim DoDamage( victim.health+10000,blood,level.ng_owner );
                         victim thread hide_consumed();
                         PlaySoundAtPosition( "ng_bigchomp",self.origin );
@@ -589,12 +587,18 @@ hide_consumed()
     if ( IsDefined( self ) && !IsAlive( self ) ) self Hide();
 }
 
-plant_explosion( radius,damage,caption )
+// NG_ROSTER_SLAM_V1: original Nacht blood assets, shared by bite and slam.
+plant_blood_burst( origin )
+{
+    if ( !IsDefined( level._effect ) ) return;
+    if ( IsDefined( level._effect["headshot"] ) ) PlayFX( level._effect["headshot"],origin );
+    if ( IsDefined( level._effect["headshot_nochunks"] ) ) PlayFX( level._effect["headshot_nochunks"],origin );
+    if ( IsDefined( level._effect["bloodspurt"] ) ) PlayFX( level._effect["bloodspurt"],origin );
+}
+
+plant_area_damage( radius,damage,bloody )
 {
     center = self.origin+(0,0,20);
-    if ( self.ng_type == 3 ) PlaySoundAtPosition( "ng_cherrybomb",self.origin );
-    if ( self.ng_type == 4 ) PlaySoundAtPosition( "ng_potato_mine",self.origin );
-    if ( self.ng_type == 7 ) PlaySoundAtPosition( "ng_floop",self.origin );
     // 1800 base damage, then 65% of round health at high rounds: useful but
     // no longer a guaranteed whole-wave kill against late-round enemies.
     if ( IsDefined( level.zombie_health ) && level.zombie_health*0.65 > damage )
@@ -608,8 +612,21 @@ plant_explosion( radius,damage,caption )
         if ( !IsAlive( z ) || Distance( self.origin,z.origin ) > radius ) continue;
         if ( Abs( z.origin[2]-self.origin[2] ) > 90 ) continue;
         tr = BulletTrace( center,z.origin+(0,0,36),false,self );
-        if ( tr["fraction"] >= 0.99 ) z DoDamage( damage,z.origin+(0,0,36),level.ng_owner );
+        if ( tr["fraction"] >= 0.99 )
+        {
+            if ( bloody ) plant_blood_burst( z.origin+(0,0,42) );
+            z DoDamage( damage,z.origin+(0,0,36),level.ng_owner );
+        }
     }
+}
+
+plant_explosion( radius,damage,caption )
+{
+    center = self.origin+(0,0,20);
+    if ( self.ng_type == 3 ) PlaySoundAtPosition( "ng_cherrybomb",self.origin );
+    if ( self.ng_type == 4 ) PlaySoundAtPosition( "ng_potato_mine",self.origin );
+    if ( self.ng_type == 7 ) PlaySoundAtPosition( "ng_floop",self.origin );
+    self plant_area_damage( radius,damage,false );
     if ( caption != "" ) PlayFX( level.ng_clips[caption],center+(0,0,18) );
     if ( self.ng_type == 4 )
         level thread mine_remains( self.origin,level.ng_owner.origin );
@@ -703,6 +720,7 @@ garden_goal()
     {
         if ( !IsDefined( level.ng_plants[i] ) ) continue;
         p = level.ng_plants[i];
+        if ( p.ng_type == 7 && p.ng_state != "idle" && p.ng_state != "look" ) continue;
         distance = Distance( self.origin, p.origin );
         radius = 90;
         if ( p.ng_type == 8 && IsDefined( p.ng_child ) ) continue;
@@ -726,8 +744,9 @@ garden_goal()
         }
         if ( target.ng_type == 2 && target.ng_health > 0 )
         {
-            variant = target walnut_variant();
-            target animate_once( variant+"twitch" );
+            // Change damaged artwork only when its health stage changes.
+            // Restarting a blink on every bite interrupted the continuous loop.
+            target show_clip( target idle_clip() );
         }
         self.ng_bite = GetTime() + 1000;
     }
@@ -756,8 +775,8 @@ cleanup()
         if ( IsDefined( level.ng_plants[i] ) ) { level.ng_plants[i] remove_plant(); level.ng_plants[i] = undefined; }
 }
 
-// Squash commits to a nearby target, then lands at that target's last valid
-// ground position. The destination trace prevents hopping through a wall.
+// Original PvZ look/jump/land sprite poses travel on a native WaW mover.
+// The target floor is locked before takeoff; geometry traces bound the arc.
 tick_squash( now )
 {
     if ( self.ng_state == "idle" )
@@ -768,7 +787,7 @@ tick_squash( now )
         self.ng_state = "look";
         self.ng_until = now+500;
         self show_clip( "squash_attack" );
-        PlaySoundAtPosition( "ng_squash_hmm",self.origin );
+        PlaySoundAtPosition( "ng_loaded_squash_hmm",self.origin );
         return;
     }
     if ( now < self.ng_until ) return;
@@ -783,19 +802,54 @@ tick_squash( now )
             if ( tr["fraction"] >= 0.99 && floor["fraction"] < 1 && floor["normal"][2] > 0.85 )
                 self.ng_landing = floor["position"];
         }
-        self.ng_state = "jump";
-        self.ng_until = now+level.ng_clip_msec["squash_jump"];
+        lift = 96;
+        roof = BulletTrace( self.ng_landing+(0,0,4),self.ng_landing+(0,0,150),false,self );
+        if ( roof["fraction"] < 1 && roof["position"][2]-self.ng_landing[2]-50 < lift )
+            lift = roof["position"][2]-self.ng_landing[2]-50;
+        roof = BulletTrace( self.origin+(0,0,4),self.origin+(0,0,150),false,self );
+        if ( roof["fraction"] < 1 && roof["position"][2]-self.origin[2]-50 < lift )
+            lift = roof["position"][2]-self.origin[2]-50;
+        // Stay within low ceilings instead of clipping through map geometry.
+        if ( lift < 12 )
+        {
+            self.ng_state = "idle";
+            self show_clip( "squash_idle" );
+            return;
+        }
+        tr = BulletTrace( self.origin+(0,0,lift+24),self.ng_landing+(0,0,lift+24),false,self );
+        if ( tr["fraction"] < 0.99 ) self.ng_landing = self.origin;
+        self.ng_state = "rise";
+        self.ng_until = now+350;
+        apex = self.ng_landing+(0,0,lift+level.ng_anchor[7]);
+        if ( IsDefined( self.ng_visual ) ) self.ng_visual MoveTo( apex,0.35,0,0.15 );
         return;
     }
-    if ( self.ng_state == "jump" )
+    if ( self.ng_state == "rise" )
+    {
+        self.ng_state = "hover";
+        self.ng_until = now+100;
+        return;
+    }
+    if ( self.ng_state == "hover" )
+    {
+        self.ng_state = "slam";
+        self.ng_until = now+150;
+        if ( IsDefined( self.ng_visual ) ) self.ng_visual MoveTo( self.ng_landing+(0,0,level.ng_anchor[7]),0.15,0.1,0 );
+        return;
+    }
+    if ( self.ng_state == "slam" )
     {
         self.origin = self.ng_landing;
         self.ng_state = "land";
         self.ng_until = now+level.ng_clip_msec["squash_land"];
         self show_clip( "squash_land" );
+        PlaySoundAtPosition( "ng_loaded_floop",self.origin );
+        self plant_area_damage( 105,1800,true );
         return;
     }
-    self plant_explosion( 105,1800,"" );
+    // The landing animation finishes after the hit, without a second blast.
+    level.ng_plants[self.ng_slot] = undefined;
+    self remove_plant();
 }
 
 tick_kelp( now )

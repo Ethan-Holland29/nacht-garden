@@ -1,0 +1,68 @@
+{
+  "ng_seed_cherrybomb": {
+    "text_bytes": 7841,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_cherrybomb",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_chomper": {
+    "text_bytes": 7825,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_chomper",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_lilypad": {
+    "text_bytes": 7826,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_lilypad",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_peashooter": {
+    "text_bytes": 7840,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_peashooter",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_potatomine": {
+    "text_bytes": 7849,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_potatomine_surface",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_repeater": {
+    "text_bytes": 7830,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_repeater",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_squash": {
+    "text_bytes": 7820,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_squash",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_sunflower": {
+    "text_bytes": 7835,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_sunflower",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_tanglekelp": {
+    "text_bytes": 7841,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_tanglekelp",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_wallnut": {
+    "text_bytes": 7826,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_wallnut",
+    "original_betty_fire_animation": true
+  },
+  "ng_seed_doomshroom": {
+    "text_bytes": 7841,
+    "below_8192_byte_limit": true,
+    "gun_model": "ng_held_doomshroom",
+    "original_betty_fire_animation": true
+  }
+}

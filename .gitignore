@@ -67,3 +67,10 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Isolated AMD three-plant build and generated source-upload helpers
+/cloud/three-plants-test/
+/cloud/private-*-upload.py
+
+# Full roster native test output
+/cloud/all-plants-test/

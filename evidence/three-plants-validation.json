@@ -1,0 +1,18 @@
+{
+  "accepted_demo_hashes_unchanged": true,
+  "accepted_images_unchanged": 86,
+  "new_images": 6,
+  "fx_count": 30,
+  "previous_fx_count": 30,
+  "linker_warnings": 0,
+  "linker_errors": 0,
+  "archive_crc_passed": true,
+  "frame_pixels_preserved": true,
+  "game_runtime_verified": true,
+  "installed_separate_profile": true,
+  "game_active_client_log": true,
+  "user_visual_acceptance": "passed: user confirmed \"They look good\" when asked about Sunflower, Wall-nut and Repeater animation, attachment and Repeater shooting",
+  "full_game_runtime_verified": false,
+  "user_acceptance_date": "2026-10-10",
+  "verification_scope": "User visual acceptance of the three-plant Nacht test; not exhaustive combat, all Wall-nut damage stages, balance or other maps"
+}

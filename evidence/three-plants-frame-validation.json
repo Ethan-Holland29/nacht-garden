@@ -1,0 +1,32 @@
+{
+  "sunflower_idle": {
+    "verified_frames": 125,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  },
+  "repeater_idle": {
+    "verified_frames": 125,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  },
+  "repeater_shoot": {
+    "verified_frames": 50,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  },
+  "wallnut_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  },
+  "wallnut_crack1_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  },
+  "wallnut_crack2_idle": {
+    "verified_frames": 102,
+    "disconnected_large_components": [],
+    "packed_pixels_equal_cloud": true
+  }
+}

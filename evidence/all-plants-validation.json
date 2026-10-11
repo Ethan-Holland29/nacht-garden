@@ -1,0 +1,48 @@
+{
+  "profile": "garden_amd_full",
+  "installed": true,
+  "native_linker_errors": 0,
+  "final_linker_warnings": 0,
+  "final_linker_errors": 0,
+  "gsc_check": "T6 grammar parse only; native WaW runtime verification is separate",
+  "cloud_frames_checked": 1358,
+  "cloud_clips": 24,
+  "fx_assets": 34,
+  "new_roster_and_doom_texture_mib": 70.862060546875,
+  "largest_new_texture_mib": 7.21875,
+  "original_accepted_images_unchanged": 86,
+  "original_recorded_demo_unchanged": true,
+  "game_runtime_verified": true,
+  "user_visual_acceptance": "Accepted on 2026-10-10: Doom-shroom and Potato Mine plant correctly, Chomper looks whole; user is happy with this version.",
+  "combat_verification": "Planting and Chomper appearance confirmed by user. Detailed Doom nuke behavior, Squash combat and every plant damage state were not separately confirmed.",
+  "water_plants": "cloud-rendered; gameplay on other maps remains deferred",
+  "pea_proportions": {
+    "source_sprite_pixels": [
+      28,
+      28
+    ],
+    "visible_source_diameter_pixels": 24,
+    "source_peashooter_height_pixels": 69,
+    "source_peashooter_world_height": 38,
+    "old_quad_width": 7,
+    "new_quad_width": 17.6231884057971,
+    "new_visible_diameter": 13.217391304347826,
+    "diameter_multiplier": 2.5175983436853,
+    "method": "shared world units per original source pixel; no new projectile artwork"
+  },
+  "map_load_verified": true,
+  "map_load_evidence": "User confirmed the repaired build runs and the tested plants place correctly.",
+  "weapon_definitions_checked": 11,
+  "rectangular_sprite_proportions_checked": true,
+  "acceptance_scope": [
+    "Doom-shroom planting",
+    "Potato Mine planting",
+    "Chomper whole sprite after repair",
+    "User acceptance of current Nacht proof of concept"
+  ],
+  "accepted_package_sha256": {
+    "mod.arena": "58dfbe1aa3f49c6eda7dbb5ae86dcb4b40325e442c368d36b31bfc97de0c0dba",
+    "mod.ff": "09db0590b351b6eb653dbb2094c9bf062e173042c8e4a38d29ec1379a99d7c37",
+    "nacht_garden.iwd": "d267fc10e5b943276b27150c4eb7616f623b2e56716519397a3b5aad6ac9639a"
+  }
+}
