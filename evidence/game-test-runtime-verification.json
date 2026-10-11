@@ -1,0 +1,18 @@
+{
+  "current_candidate_verified": true,
+  "last_installed_user_feedback": "it looks perfect and i screen recorded the comparison for the devpost",
+  "candidate_changes": [
+    "continuous 25-pose body cycle",
+    "AMD-rendered eyelid-to-face attachment"
+  ],
+  "pending": [],
+  "installed": true,
+  "launch_request_sent": true,
+  "package_sha256": {
+    "mod.arena": "0e639c22b97b5f94fee603cb72714dc88902c306f811aae23bab9ce88d3b2f52",
+    "mod.ff": "9c33371e496ac6cc1af4f66dd324bc75b7f9d718c7728b2c1484b2b6349d42b8",
+    "nacht_garden.iwd": "d05e5bfd2a289013fc1aeb5b716549840935d1178cbd747eb37a022511edfb8c"
+  },
+  "verification_scope": "User visual acceptance of Nacht comparison; not all maps or all combat behaviors",
+  "accepted_on": "2026-10-10"
+}

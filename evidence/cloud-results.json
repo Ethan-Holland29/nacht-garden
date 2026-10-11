@@ -1,0 +1,90 @@
+{
+  "environment": {
+    "os": "Linux-6.8.0-79-generic-x86_64-with-glibc2.43",
+    "pytorch": "2.13.0+rocm10.0.0",
+    "rocm": "7.15.26333",
+    "gpu": "AMD Radeon Pro W7900D",
+    "vram_gib": 47.984375,
+    "cpu_threads": 8
+  },
+  "quality": {
+    "max_premultiplied_pixel_error": 6.556510925292969e-06,
+    "mean_premultiplied_pixel_error": 1.1375589359374771e-09,
+    "integer_keyframes_preserved": true
+  },
+  "benchmark": {
+    "cpu": {
+      "median_seconds": 1.3881901763379574,
+      "trials_seconds": [
+        1.3649701178073883,
+        1.3881901763379574,
+        1.450364738702774
+      ],
+      "frames_per_second": 11.52579831836007
+    },
+    "radeon_rocm": {
+      "median_seconds": 0.0391855351626873,
+      "trials_seconds": [
+        0.039350975304841995,
+        0.03916671685874462,
+        0.0391855351626873
+      ],
+      "frames_per_second": 408.3139335362528
+    },
+    "speedup": 35.42608696230849
+  },
+  "textures": {
+    "12": {
+      "frames": 25,
+      "duration_seconds": 2.0833333333333335,
+      "render_and_readback_seconds": 0.14145595580339432,
+      "atlas_size": [
+        1024,
+        512
+      ],
+      "uncompressed_texture_bytes": 2097152,
+      "common_source_bounds": [
+        199,
+        198,
+        276,
+        273
+      ],
+      "preview_duration_ms": 2083
+    },
+    "24": {
+      "frames": 50,
+      "duration_seconds": 2.0833333333333335,
+      "render_and_readback_seconds": 0.20015572011470795,
+      "atlas_size": [
+        1024,
+        1024
+      ],
+      "uncompressed_texture_bytes": 4194304,
+      "common_source_bounds": [
+        199,
+        198,
+        276,
+        273
+      ],
+      "preview_duration_ms": 2083
+    },
+    "60": {
+      "frames": 125,
+      "duration_seconds": 2.0833333333333335,
+      "render_and_readback_seconds": 0.4959678426384926,
+      "atlas_size": [
+        1024,
+        2048
+      ],
+      "uncompressed_texture_bytes": 8388608,
+      "common_source_bounds": [
+        199,
+        198,
+        276,
+        273
+      ],
+      "preview_duration_ms": 2083
+    }
+  },
+  "scope": "Peashooter idle prototype; not FSR; not installed in game. GPU benchmark excludes upload, readback, encoding, and networking."
+}

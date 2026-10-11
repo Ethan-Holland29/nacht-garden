@@ -1,0 +1,4 @@
+# Cloud: install a ROCm-compatible PyTorch separately for your AMD environment.
+numpy>=1.26
+Pillow>=10
+ipython>=8
