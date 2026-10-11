@@ -1,5 +1,7 @@
 # Nacht Garden
 
+A project using AI assisted reverse engineering to combine Plants vs. Zombies with Nacht Der Untoten zombies.
+
 **Plants vs. Zombies mechanics inside Call of Duty: World at War, with original animations processed on AMD Radeon cloud hardware.**
 
 Nacht Garden is a solo proof of concept on **Nacht der Untoten**, running in the original World at War engine. It combines placeable plants, sun, a seed bank and pea attacks with first-person Zombies gameplay. Players place plants using the original Bouncing Betty hand animation.
